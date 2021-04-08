@@ -8,3 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Using props to communicate between components. Adding validations with propTypes.
 - useEffect hook to make an http request.
 - Destructuring Props.
+- Using external helpers for fetching APIs.
