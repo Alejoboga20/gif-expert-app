@@ -4,7 +4,12 @@ exports[`GifGridItem Tests should Display GifGridItem properly 1`] = `
 <div
   className="card animate__animated animate__fadeIn"
 >
-  <img />
-  <p />
+  <img
+    alt="testing"
+    src="testing"
+  />
+  <p>
+    testing
+  </p>
 </div>
 `;
