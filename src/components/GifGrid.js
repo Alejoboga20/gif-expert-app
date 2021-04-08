@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const GifGrid = ({ category }) => {
-  const getGif = async () => {
+  useEffect(() => {
+    getGifs();
+  }, []);
+
+  const getGifs = async () => {
     const url =
       'https://api.giphy.com/v1/gifs/search?q=React&limit=10&api_key=U81A19qAgRSt2BXfoSr6MvmVr1OyqhNP';
 
@@ -16,8 +20,6 @@ const GifGrid = ({ category }) => {
     });
     console.log(gifs);
   };
-
-  getGif();
 
   return (
     <div>
