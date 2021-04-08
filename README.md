@@ -9,3 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - useEffect hook to make an http request.
 - Destructuring Props.
 - Using external helpers for fetching APIs.
+- Using [AnimateStyle](https://animate.style/) for CSS Animations
