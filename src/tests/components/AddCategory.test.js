@@ -5,6 +5,7 @@ import AddCategory from '../../components/AddCategory';
 
 describe('AddCategory Tests', () => {
   const setCategories = jest.fn();
+  const value = 'Hello World';
   let wrapper = shallow(<AddCategory setCategories={setCategories} />);
 
   beforeEach(() => {
@@ -18,12 +19,18 @@ describe('AddCategory Tests', () => {
 
   test('should change text input', () => {
     const input = wrapper.find('input');
-    const value = 'Hello World';
     input.simulate('change', { target: { value } });
   });
 
-  test('should not send blank category', () => {
+  test('should not set blank input', () => {
     wrapper.find('form').simulate('submit', { preventDefault: () => {} });
     expect(setCategories).not.toHaveBeenCalled();
+  });
+
+  test('should call setCategories and clean inputValue', () => {
+    wrapper.find('input').simulate('change', { target: { value } });
+    wrapper.find('form').simulate('submit', { preventDefault: () => {} });
+    expect(setCategories).toHaveBeenCalled();
+    expect(wrapper.find('input').prop('value')).toBe('');
   });
 });
