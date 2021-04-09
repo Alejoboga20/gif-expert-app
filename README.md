@@ -11,3 +11,4 @@ Project is hosted in this site: [APP](https://alejoboga20.github.io/gif-expert-a
 - Destructuring Props.
 - Using external helpers for fetching APIs.
 - Using [AnimateStyle](https://animate.style/) for CSS Animations
+- Use jest fn for mocks. Simulate input change and form submit.
