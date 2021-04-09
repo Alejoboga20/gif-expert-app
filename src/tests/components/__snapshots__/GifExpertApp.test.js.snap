@@ -12,3 +12,25 @@ exports[`GifExpertApp Tests should Display GifExpertApp properly 1`] = `
   <ol />
 </div>
 `;
+
+exports[`GifExpertApp Tests should show a list of categories 1`] = `
+<div>
+  <h2>
+    Gif Expert App
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="Avatar"
+      key="Avatar"
+    />
+    <GifGrid
+      category="Lord Of Rings"
+      key="Lord Of Rings"
+    />
+  </ol>
+</div>
+`;
