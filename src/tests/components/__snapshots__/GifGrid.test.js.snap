@@ -29,13 +29,10 @@ exports[`GifGrid Tests should show items when images are loaded with useFetchGif
     className="card-grid"
   >
     <GifGridItem
-      0={
-        Object {
-          "id": "ABC",
-          "title": "Testing",
-          "url": "https://localhost.com",
-        }
-      }
+      id="ABC"
+      key="ABC"
+      title="Testing"
+      url="https://localhost.com"
     />
   </div>
 </Fragment>
