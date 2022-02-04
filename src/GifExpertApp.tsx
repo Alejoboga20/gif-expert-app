@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import AddCategory from './components/AddCategory';
+import { Text } from '@nextui-org/react';
+import { AddCategory } from './components/AddCategory/AddCategory';
 import GifGrid from './components/GifGrid';
 
 const GifExpertApp = ({ defaultCategories = [] }: GifExpertAppProps) => {
@@ -7,7 +8,7 @@ const GifExpertApp = ({ defaultCategories = [] }: GifExpertAppProps) => {
 
 	return (
 		<div>
-			<h2>Gif Expert App</h2>
+			<Text h2>Gif Expert App</Text>
 			<AddCategory setCategories={setCategories} />
 			<hr />
 			<ol>
