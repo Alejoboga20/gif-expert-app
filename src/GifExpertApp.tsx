@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Text } from '@nextui-org/react';
 import { AddCategory } from './components/AddCategory/AddCategory';
-import GifGrid from './components/GifGrid';
+import GifGrid from './components/GifGrid/GifGrid';
 
 const GifExpertApp = ({ defaultCategories = [] }: GifExpertAppProps) => {
 	const [categories, setCategories] = useState(defaultCategories);
