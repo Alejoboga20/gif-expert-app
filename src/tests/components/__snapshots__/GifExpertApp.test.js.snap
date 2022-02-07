@@ -2,9 +2,25 @@
 
 exports[`GifExpertApp Tests should Display GifExpertApp properly 1`] = `
 <div>
-  <h2>
+  <Memo(Text)
+    b={false}
+    blockquote={false}
+    color="default"
+    del={false}
+    em={false}
+    h1={false}
+    h2={true}
+    h3={false}
+    h4={false}
+    h5={false}
+    h6={false}
+    i={false}
+    small={false}
+    span={false}
+    transform="none"
+  >
     Gif Expert App
-  </h2>
+  </Memo(Text)>
   <AddCategory
     setCategories={[Function]}
   />
@@ -15,9 +31,25 @@ exports[`GifExpertApp Tests should Display GifExpertApp properly 1`] = `
 
 exports[`GifExpertApp Tests should show a list of categories 1`] = `
 <div>
-  <h2>
+  <Memo(Text)
+    b={false}
+    blockquote={false}
+    color="default"
+    del={false}
+    em={false}
+    h1={false}
+    h2={true}
+    h3={false}
+    h4={false}
+    h5={false}
+    h6={false}
+    i={false}
+    small={false}
+    span={false}
+    transform="none"
+  >
     Gif Expert App
-  </h2>
+  </Memo(Text)>
   <AddCategory
     setCategories={[Function]}
   />

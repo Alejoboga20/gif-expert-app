@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCategory Tests should render properly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <NextUI - Input
+    animated={true}
+    autoComplete="off"
+    borderWeight="normal"
+    bordered={false}
+    className="input"
+    clearable={true}
+    color="default"
+    contentClickable={false}
+    contentLeftStyling={true}
+    contentRightStyling={true}
+    css={
+      Object {
+        "margin": "1.5rem 0",
+        "width": "100%",
+      }
+    }
+    disabled={false}
+    fullWidth={false}
+    helperColor="default"
+    initialValue=""
+    labelPlaceholder="Gif"
+    onChange={[Function]}
+    placeholder=""
+    readOnly={false}
+    required={false}
+    rounded={false}
+    shadow={true}
+    size="md"
+    status="default"
+    type="text"
+    underlined={false}
+    value=""
+    width="initial"
+  />
+</form>
+`;

@@ -1,6 +1,5 @@
-import React from 'react';
 import { shallow } from 'enzyme';
-import AddCategory from '../../components/AddCategory/AddCategory';
+import { AddCategory } from '../../components/AddCategory/AddCategory';
 
 describe('AddCategory Tests', () => {
 	const setCategories = jest.fn();
