@@ -1,6 +1,6 @@
 import { Loading, Grid, Text } from '@nextui-org/react';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
-import GifGridItem from '../GifGridItem';
+import GifGridItem from '../GifGridItem/GifGridItem';
 
 const GifGrid = ({ category }: GifGridProps) => {
 	const { data: images, loading } = useFetchGifs(category);
