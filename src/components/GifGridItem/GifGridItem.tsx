@@ -4,7 +4,13 @@ const GifGridItem = ({ title, url }: GifGridItemProps) => {
 	return (
 		<Card bordered hoverable shadow>
 			<Card.Body>
-				<Card.Image src={url} alt={title} objectFit='cover' width='100%' height='100%'></Card.Image>
+				<Card.Image
+					src={url}
+					alt={title}
+					objectFit='cover'
+					width='100%'
+					height='10rem'
+				></Card.Image>
 			</Card.Body>
 			<Card.Footer>
 				<p>{title}</p>
