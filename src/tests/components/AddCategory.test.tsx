@@ -19,6 +19,7 @@ describe('AddCategory Tests', () => {
 	test('should change text input', () => {
 		const input = wrapper.find('input');
 		input.simulate('change', { target: { value } });
+		expect(wrapper.find('input').prop('value')).toBe(value);
 	});
 
 	test('should not set blank input', () => {
