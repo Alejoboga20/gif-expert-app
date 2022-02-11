@@ -1,3 +1,4 @@
+import React from 'react';
 import { Loading, Grid, Text } from '@nextui-org/react';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
 import GifGridItem from '../GifGridItem/GifGridItem';
@@ -12,11 +13,13 @@ const GifGrid = ({ category }: GifGridProps) => {
 			<Text h3>{category}</Text>
 
 			<Grid.Container gap={1} justify='center'>
-				{images.map((image) => (
-					<Grid xs={6} sm={4} md={3} lg={2}>
-						<GifGridItem key={image.id} {...image} />
-					</Grid>
-				))}
+				{React.Children.toArray(
+					images.map((image) => (
+						<Grid xs={6} sm={4} md={3} lg={2}>
+							<GifGridItem key={image.id} {...image} />
+						</Grid>
+					))
+				)}
 			</Grid.Container>
 		</>
 	);
