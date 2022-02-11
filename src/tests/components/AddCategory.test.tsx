@@ -1,17 +1,18 @@
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { AddCategory } from '../../components/AddCategory/AddCategory';
 
 describe('AddCategory Tests', () => {
 	const setCategories = jest.fn();
 	const value = 'Hello World';
-	let wrapper = shallow(<AddCategory setCategories={setCategories} />);
+	let wrapper = mount(<AddCategory setCategories={setCategories} />);
 
 	beforeEach(() => {
 		jest.clearAllMocks();
-		wrapper = shallow(<AddCategory setCategories={setCategories} />);
+		wrapper = mount(<AddCategory setCategories={setCategories} />);
 	});
 
 	test('should render properly', () => {
+		const wrapper = shallow(<AddCategory setCategories={setCategories} />);
 		expect(wrapper).toMatchSnapshot();
 	});
 
