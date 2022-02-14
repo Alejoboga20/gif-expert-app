@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGridItem Tests should Display GifGridItem properly 1`] = `
+<NextUI - Card
+  animated={true}
+  bordered={true}
+  cover={false}
+  hoverable={true}
+  preventDefault={false}
+  ripple={true}
+  shadow={true}
+>
+  <Styled.div>
+    <Memo(Image)
+      alt="testing"
+      height="10rem"
+      objectFit="cover"
+      src="testing"
+      width="100%"
+    />
+  </Styled.div>
+  <Styled.div>
+    <p>
+      testing
+    </p>
+  </Styled.div>
+</NextUI - Card>
+`;
+
+exports[`GifGridItem Tests should have animate__fadeIn Class 1`] = `
+<div
+  className="nextui-c-kltynt nextui-c-kltynt-kQghEc-color-default nextui-c-kltynt-iVCgFB-shadow-true nextui-c-kltynt-kUADSW-bordered-true nextui-c-kltynt-bzEnZV-borderWeight-normal nextui-c-kltynt-iNKybL-animated-true nextui-c-kltynt-jQJOMy-hoverable-true nextui-c-kltynt-ifTMkJ-cover-false nextui-c-kltynt-kQghEc-cv"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onKeyDownCapture={[Function]}
+  onKeyPress={[Function]}
+  onKeyPressCapture={[Function]}
+  onKeyUp={[Function]}
+  onKeyUpCapture={[Function]}
+  role="section"
+  tabIndex={-1}
+>
+  <div
+    className="nextui-c-gJBdwd"
+  >
+    <div
+      className="nextui-c-bVLlAJ nextui-c-bVLlAJ-cCitdK-ready-false nextui-c-bVLlAJ-iiVyXnL-css nextui-image-container nextui-image--loading"
+      data-state="loading"
+    >
+      <div
+        className="nextui-c-eaDpBR nextui-c-eaDpBR-ibDGmTT-css nextui-image-skeleton"
+      />
+      <img
+        alt="testing"
+        className="nextui-c-kbhVdb nextui-c-kbhVdb-ieCSSFU-css nextui-image"
+        data-state="loading"
+        height="10rem"
+        onLoad={[Function]}
+        src="testing"
+        width="100%"
+      />
+    </div>
+  </div>
+  <div
+    className="nextui-c-jYFaLZ"
+  >
+    <p>
+      testing
+    </p>
+  </div>
+</div>
+`;
