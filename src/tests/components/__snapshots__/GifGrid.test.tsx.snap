@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GifGrid Tests should be render properly 1`] = `
+exports[`GifGrid Tests should be render properly when is loading 1`] = `
 <Memo(Loading)
   size="lg"
   type="default"
