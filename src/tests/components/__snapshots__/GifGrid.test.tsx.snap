@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid Tests should be render properly 1`] = `
+<Memo(Loading)
+  size="lg"
+  type="default"
+/>
+`;
+
+exports[`GifGrid Tests should show items when images are loaded with useFetchGifs 1`] = `
+<Fragment>
+  <Memo(Text)
+    b={false}
+    blockquote={false}
+    color="default"
+    del={false}
+    em={false}
+    h1={false}
+    h2={false}
+    h3={true}
+    h4={false}
+    h5={false}
+    h6={false}
+    i={false}
+    small={false}
+    span={false}
+    transform="none"
+  >
+    Avatar
+  </Memo(Text)>
+  <GridContainer
+    className=""
+    gap={1}
+    justify="center"
+    wrap="wrap"
+  >
+    <Grid
+      key=".0"
+      lg={2}
+      md={3}
+      sm={4}
+      xs={6}
+    >
+      <GifGridItem
+        id="ABC"
+        key="ABC"
+        title="Testing"
+        url="https://localhost.com"
+      />
+    </Grid>
+  </GridContainer>
+</Fragment>
+`;

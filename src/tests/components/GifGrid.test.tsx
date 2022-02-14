@@ -1,15 +1,16 @@
-import React from 'react';
 import '@testing-library/jest-dom';
 import { shallow } from 'enzyme';
-import GifGrid from '../../components/GifGrid/GifGrid';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
+import GifGrid from '../../components/GifGrid/GifGrid';
+
 jest.mock('../../hooks/useFetchGifs');
+const mockedUseFetchGifs = useFetchGifs as jest.MockedFunction<typeof useFetchGifs>;
 
 describe('GifGrid Tests', () => {
 	const category = 'Avatar';
 
 	test('should be render properly', () => {
-		useFetchGifs.mockReturnValue({ data: [], loading: true });
+		mockedUseFetchGifs.mockReturnValue({ data: [], loading: true });
 		const wrapper = shallow(<GifGrid category={category} />);
 		expect(wrapper).toMatchSnapshot();
 	});
@@ -23,7 +24,7 @@ describe('GifGrid Tests', () => {
 			},
 		];
 
-		useFetchGifs.mockReturnValue({ data: gifs, loading: false });
+		mockedUseFetchGifs.mockReturnValue({ data: gifs, loading: false });
 		const wrapper = shallow(<GifGrid category={category} />);
 		expect(wrapper).toMatchSnapshot();
 		expect(wrapper.find('p').exists()).toBe(false);
